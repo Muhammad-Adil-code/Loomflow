@@ -67,17 +67,8 @@ const dashboard = {
             type: 'group',
             children: [
                 {
-                    id: 'chatflows',
-                    title: 'Chatflows',
-                    type: 'item',
-                    url: '/chatflows',
-                    icon: icons.IconHierarchy,
-                    breadcrumbs: true,
-                    permission: 'chatflows:view'
-                },
-                {
                     id: 'agentflows',
-                    title: 'Agentflows',
+                    title: 'Agents',
                     type: 'item',
                     url: '/agentflows',
                     icon: icons.IconUsersGroup,
@@ -85,13 +76,13 @@ const dashboard = {
                     permission: 'agentflows:view'
                 },
                 {
-                    id: 'executions',
-                    title: 'Executions',
+                    id: 'chatflows',
+                    title: 'Studio',
                     type: 'item',
-                    url: '/executions',
-                    icon: icons.IconListCheck,
+                    url: '/chatflows',
+                    icon: icons.IconHierarchy,
                     breadcrumbs: true,
-                    permission: 'executions:view'
+                    permission: 'chatflows:view'
                 },
                 {
                     id: 'assistants',
@@ -103,14 +94,21 @@ const dashboard = {
                     permission: 'assistants:view'
                 },
                 {
-                    id: 'marketplaces',
-                    title: 'Marketplaces',
+                    id: 'executions',
+                    title: 'Runs',
                     type: 'item',
-                    url: '/marketplaces',
-                    icon: icons.IconBuildingStore,
+                    url: '/executions',
+                    icon: icons.IconListCheck,
                     breadcrumbs: true,
-                    permission: 'templates:marketplace,templates:custom'
-                },
+                    permission: 'executions:view'
+                }
+            ]
+        },
+        {
+            id: 'resources',
+            title: 'Resources',
+            type: 'group',
+            children: [
                 {
                     id: 'tools',
                     title: 'Tools',
@@ -149,12 +147,21 @@ const dashboard = {
                 },
                 {
                     id: 'document-stores',
-                    title: 'Document Stores',
+                    title: 'Knowledge',
                     type: 'item',
                     url: '/document-stores',
                     icon: icons.IconFiles,
                     breadcrumbs: true,
                     permission: 'documentStores:view'
+                },
+                {
+                    id: 'marketplaces',
+                    title: 'Templates',
+                    type: 'item',
+                    url: '/marketplaces',
+                    icon: icons.IconBuildingStore,
+                    breadcrumbs: true,
+                    permission: 'templates:marketplace,templates:custom'
                 }
             ]
         },

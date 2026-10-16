@@ -28,7 +28,7 @@ import Workspaces from '@/views/workspace'
 
 /**
  * Component that redirects users to the first accessible page based on their permissions
- * This prevents 403 errors when users don't have access to the default chatflows page
+ * This prevents 403 errors when users don't have access to the default agents page
  */
 export const DefaultRedirect = () => {
     const { hasPermission, hasDisplay } = useAuth()
@@ -38,8 +38,8 @@ export const DefaultRedirect = () => {
 
     // Define the order of routes to check (based on the menu order in dashboard.js)
     const routesToCheck = [
-        { component: Chatflows, permission: 'chatflows:view' },
         { component: Agentflows, permission: 'agentflows:view' },
+        { component: Chatflows, permission: 'chatflows:view' },
         { component: Executions, permission: 'executions:view' },
         { component: Assistants, permission: 'assistants:view' },
         { component: Marketplaces, permission: 'templates:marketplace,templates:custom' },

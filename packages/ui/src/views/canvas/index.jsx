@@ -597,6 +597,7 @@ const Canvas = () => {
                                 onConnect={onConnect}
                                 onInit={setReactFlowInstance}
                                 fitView
+                                style={{ backgroundColor: customization.isDarkMode ? '#0B1020' : '#FFF4EC' }}
                                 deleteKeyCode={canvas.canvasDialogShow ? null : ['Delete']}
                                 minZoom={0.1}
                                 snapGrid={[25, 25]}
@@ -633,7 +634,9 @@ const Canvas = () => {
                                         {isBackgroundEnabled ? <IconArtboard /> : <IconArtboardOff />}
                                     </button>
                                 </Controls>
-                                {isBackgroundEnabled && <Background color='#aaa' gap={16} />}
+                                {isBackgroundEnabled && (
+                                    <Background variant='dots' color={customization.isDarkMode ? '#2E3A5C' : '#E8C9B8'} gap={24} size={2} />
+                                )}
                                 <AddNodes isAgentCanvas={isAgentCanvas} nodesData={getNodesApi.data} node={selectedNode} />
                                 {isSyncNodesButtonEnabled && (
                                     <Fab

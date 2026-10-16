@@ -20,6 +20,7 @@ import { baseURL } from '@/store/constant'
 import { IconTrash, IconCopy, IconInfoCircle, IconAlertTriangle } from '@tabler/icons-react'
 import { flowContext } from '@/store/context/ReactFlowContext'
 import LlamaindexPNG from '@/assets/images/llamaindex.png'
+import { getCategoryColor } from '@/utils/nodeCategoryColors'
 
 // ===========================|| CANVAS NODE ||=========================== //
 
@@ -149,7 +150,16 @@ const CanvasNode = ({ data }) => {
                     placement='right-start'
                 >
                     <Box>
-                        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                        <div
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                alignItems: 'center',
+                                borderRadius: '18px 18px 0 0',
+                                borderTop: `5px solid ${getCategoryColor(data.category)}`,
+                                background: `${getCategoryColor(data.category)}${theme?.customization?.isDarkMode ? '33' : '1F'}`
+                            }}
+                        >
                             <Box style={{ width: 50, marginRight: 10, padding: 10 }}>
                                 <div
                                     style={{

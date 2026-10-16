@@ -732,6 +732,7 @@ const AgentflowCanvas = () => {
                                 onConnect={onConnect}
                                 onInit={setReactFlowInstance}
                                 fitView
+                                style={{ backgroundColor: customization.isDarkMode ? '#0B1020' : '#FFF4EC' }}
                                 deleteKeyCode={canvas.canvasDialogShow ? null : ['Delete']}
                                 minZoom={0.5}
                                 snapGrid={[25, 25]}
@@ -770,14 +771,16 @@ const AgentflowCanvas = () => {
                                 </Controls>
                                 <MiniMap
                                     nodeStrokeWidth={3}
-                                    nodeColor={customization.isDarkMode ? '#2d2d2d' : '#e2e2e2'}
-                                    nodeStrokeColor={customization.isDarkMode ? '#525252' : '#fff'}
-                                    maskColor={customization.isDarkMode ? 'rgb(45, 45, 45, 0.6)' : 'rgb(240, 240, 240, 0.6)'}
+                                    nodeColor={customization.isDarkMode ? '#3a4a75' : '#f7b9a3'}
+                                    nodeStrokeColor={customization.isDarkMode ? '#525252' : '#14213d'}
+                                    maskColor={customization.isDarkMode ? 'rgb(11, 16, 32, 0.6)' : 'rgb(255, 232, 220, 0.6)'}
                                     style={{
                                         backgroundColor: customization.isDarkMode ? theme.palette.background.default : '#fff'
                                     }}
                                 />
-                                {isBackgroundEnabled && <Background color='#aaa' gap={16} />}
+                                {isBackgroundEnabled && (
+                                    <Background variant='dots' color={customization.isDarkMode ? '#2E3A5C' : '#E8C9B8'} gap={24} size={2} />
+                                )}
                                 <AddNodes
                                     isAgentCanvas={true}
                                     isAgentflowv2={true}

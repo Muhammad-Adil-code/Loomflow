@@ -86,3 +86,20 @@
     color: #ffffff;
     fill: #ffffff;
 }
+
+/* Loomflow edge styling: coral rounded step edges, deeper and thicker when selected */
+.chatflow-canvas .react-flow__edge-path {
+    stroke: #f4511e;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.chatflow-canvas .react-flow__edge.selected .react-flow__edge-path,
+.chatflow-canvas .react-flow__edge:hover .react-flow__edge-path {
+    stroke: #d84315;
+    stroke-width: 3.5;
+}
+
+.chatflow-canvas .react-flow__handle {
+    border: 2px solid #f4511e;
+}

@@ -7,14 +7,16 @@ import MainCard from './MainCard'
 const NodeCardWrapper = styled(MainCard)(({ theme }) => ({
     background: theme.palette.card.main,
     color: theme.darkTextPrimary,
-    border: `1px solid ${theme.customization?.isDarkMode ? theme.palette.grey[900] + 25 : theme.palette.primary[200] + 75}`,
-    width: '300px',
+    // Loomflow: larger, rounder node cards with a warm-tinted border and softer shadow
+    border: `1.5px solid ${theme.customization?.isDarkMode ? theme.palette.primary[200] + 30 : theme.palette.primary[200] + 90}`,
+    borderRadius: '20px',
+    width: '320px',
     height: 'auto',
     padding: '10px',
-    boxShadow: `rgba(0, 0, 0, 0.05) 0px 0px 0px 1px`,
+    boxShadow: theme.customization?.isDarkMode ? `rgba(0, 0, 0, 0.35) 0px 6px 18px -4px` : `rgba(20, 33, 61, 0.08) 0px 6px 18px -4px`,
     '&:hover': {
         borderColor: theme.palette.primary.main,
-        boxShadow: `rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px`
+        boxShadow: `rgba(244, 81, 30, 0.22) 0px 12px 24px -6px, rgba(20, 33, 61, 0.08) 0px 4px 8px -2px`
     }
 }))
 

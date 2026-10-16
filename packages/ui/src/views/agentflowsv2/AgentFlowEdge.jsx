@@ -66,7 +66,7 @@ const AgentFlowEdge = ({ id, sourceX, sourceY, targetX, targetY, sourcePosition,
             <defs>
                 <linearGradient id={gradientId}>
                     <stop offset='0%' stopColor={data?.sourceColor || '#f4511e'} />
-                    <stop offset='100%' stopColor={data?.targetColor || '#2a8af6'} />
+                    <stop offset='100%' stopColor={data?.targetColor || '#14213d'} />
                 </linearGradient>
             </defs>
             <path
@@ -136,7 +136,7 @@ const AgentFlowEdge = ({ id, sourceX, sourceY, targetX, targetY, sourcePosition,
                                 width: '12px',
                                 height: '12px',
                                 background: `linear-gradient(to right, ${data?.sourceColor || '#f4511e'}, ${
-                                    data?.targetColor || '#2a8af6'
+                                    data?.targetColor || '#14213d'
                                 })`,
                                 border: 'none',
                                 borderRadius: '50%',

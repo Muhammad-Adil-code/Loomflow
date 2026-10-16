@@ -1295,7 +1295,7 @@ const CustomAssistantConfigurePreview = () => {
                                                         mt: 1,
                                                         mb: 1,
                                                         borderRadius: 20,
-                                                        background: 'linear-gradient(45deg, #673ab7 30%, #1e88e5 90%)'
+                                                        background: 'linear-gradient(45deg, #f4511e 30%, #14213d 90%)'
                                                     }}
                                                     variant='contained'
                                                     onClick={onSaveAndProcess}

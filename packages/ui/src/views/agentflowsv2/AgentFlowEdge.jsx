@@ -65,7 +65,7 @@ const AgentFlowEdge = ({ id, sourceX, sourceY, targetX, targetY, sourcePosition,
         <>
             <defs>
                 <linearGradient id={gradientId}>
-                    <stop offset='0%' stopColor={data?.sourceColor || '#ae53ba'} />
+                    <stop offset='0%' stopColor={data?.sourceColor || '#f4511e'} />
                     <stop offset='100%' stopColor={data?.targetColor || '#2a8af6'} />
                 </linearGradient>
             </defs>
@@ -102,7 +102,7 @@ const AgentFlowEdge = ({ id, sourceX, sourceY, targetX, targetY, sourcePosition,
                 <EdgeLabelRenderer>
                     <EdgeLabel
                         isHumanInput={data?.isHumanInput}
-                        color={data?.sourceColor || '#ae53ba'}
+                        color={data?.sourceColor || '#f4511e'}
                         label={data.edgeLabel}
                         transform={`translate(-50%, 0%) translate(${sourceX}px,${sourceY}px)`}
                     />
@@ -135,7 +135,7 @@ const AgentFlowEdge = ({ id, sourceX, sourceY, targetX, targetY, sourcePosition,
                             style={{
                                 width: '12px',
                                 height: '12px',
-                                background: `linear-gradient(to right, ${data?.sourceColor || '#ae53ba'}, ${
+                                background: `linear-gradient(to right, ${data?.sourceColor || '#f4511e'}, ${
                                     data?.targetColor || '#2a8af6'
                                 })`,
                                 border: 'none',

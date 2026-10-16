@@ -27,7 +27,7 @@ export const theme = (customization) => {
               darkTextSecondary: color.paper,
               textDark: color.paper,
               menuSelected: color.darkSecondaryDark,
-              menuSelectedBack: color.darkSecondaryLight,
+              menuSelectedBack: color.darkSecondary200,
               divider: color.darkPaper,
               customization
           }
@@ -35,13 +35,13 @@ export const theme = (customization) => {
               colors: color,
               heading: color.grey900,
               paper: color.paper,
-              backgroundDefault: color.paper,
+              backgroundDefault: color.background,
               background: color.primaryLight,
               darkTextPrimary: color.grey700,
               darkTextSecondary: color.grey500,
               textDark: color.grey900,
-              menuSelected: color.secondaryDark,
-              menuSelectedBack: color.secondaryLight,
+              menuSelected: color.primaryDark,
+              menuSelectedBack: color.primaryLight,
               divider: color.grey200,
               customization
           }

@@ -1,96 +1,82 @@
 <!-- markdownlint-disable MD030 -->
 
 <p align="center">
-<img src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_white.svg#gh-light-mode-only">
-<img src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_dark.svg#gh-dark-mode-only">
+<img src="./images/loomflow_light.svg#gh-light-mode-only" alt="Loomflow" width="320">
+<img src="./images/loomflow_dark.svg#gh-dark-mode-only" alt="Loomflow" width="320">
 </p>
 
 <div align="center">
-
-[![Release Notes](https://img.shields.io/github/release/FlowiseAI/Flowise)](https://github.com/FlowiseAI/Flowise/releases)
-[![Discord](https://img.shields.io/discord/1087698854775881778?label=Discord&logo=discord)](https://discord.gg/jbaHfsRVBW)
-[![Twitter Follow](https://img.shields.io/twitter/follow/FlowiseAI?style=social)](https://twitter.com/FlowiseAI)
-[![GitHub star chart](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social)](https://star-history.com/#FlowiseAI/Flowise)
-[![GitHub fork](https://img.shields.io/github/forks/FlowiseAI/Flowise?style=social)](https://github.com/FlowiseAI/Flowise/fork)
 
 English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)
 
 </div>
 
-<h2>Flowise has been archived. Refer to [Future of Flowise](https://github.com/FlowiseAI/Flowise/discussions/6727)</h2>
+# Loomflow
 
-<h3>Build AI Agents, Visually</h3>
-<a href="https://github.com/FlowiseAI/Flowise">
-<img width="100%" src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_agentflow.gif?raw=true"></a>
+**A visual builder for AI agents and workflows.** Drag nodes onto a canvas, thread them together, and ship agents, chat flows and automations without wiring everything by hand.
 
-## 📚 Table of Contents
+Loomflow is a modified fork of [Flowise](https://github.com/FlowiseAI/Flowise) (Apache License 2.0). See [Origin and licence](#origin-and-licence).
 
--   [⚡ Quick Start](#-quick-start)
--   [🐳 Docker](#-docker)
--   [👨‍💻 Developers](#-developers)
--   [🌱 Env Variables](#-env-variables)
--   [📖 Documentation](#-documentation)
--   [🌐 Self Host](#-self-host)
--   [☁️ Flowise Cloud](#️-flowise-cloud)
--   [🙋 Support](#-support)
--   [🙌 Contributing](#-contributing)
--   [📄 License](#-license)
+## Features
 
-## ⚡Quick Start
+-   **Agents**: build single and multi-agent workflows on a visual canvas, with tools, memory, human-in-the-loop steps and iteration loops.
+-   **Studio**: assemble chat flows from models, prompts, retrievers, vector stores and document loaders.
+-   **Assistants**: configure ready-to-run assistants on top of your own tools and knowledge.
+-   **Knowledge**: manage document stores, chunking, embeddings and vector upserts.
+-   **Resources**: keep tools, credentials, variables and API keys in one place.
+-   **Runs**: inspect executions, evaluate results and browse templates.
+-   **Fresh canvas**: category-colored node headers, rounded cards, smooth coral edges and a dotted grid, in light and dark themes.
+-   **Embed and API**: expose any flow through an API or an embeddable chat widget.
 
-Download and Install [NodeJS](https://nodejs.org/en/download) >= 20.0.0
+## Table of Contents
 
-1. Install Flowise
-    ```bash
-    npm install -g flowise
-    ```
-2. Start Flowise
+-   [Quick Start](#quick-start)
+-   [Docker](#docker)
+-   [Developers](#developers)
+-   [Env Variables](#env-variables)
+-   [Origin and licence](#origin-and-licence)
+-   [Contributing](#contributing)
 
-    ```bash
-    npx flowise start
-    ```
+## Quick Start
 
-3. Open [http://localhost:3000](http://localhost:3000)
+Install [NodeJS](https://nodejs.org/en/download) >= 20.0.0 and [PNPM](https://pnpm.io/installation), then build from source:
 
-## 🐳 Docker
+```bash
+pnpm install
+pnpm build
+pnpm start
+```
+
+Open [http://localhost:3000](http://localhost:3000). Loomflow opens on the Agents page.
+
+Note: the npm package, CLI binary (`flowise`) and `FLOWISE_*` environment variables keep their upstream names in this fork so that existing configuration and integrations keep working.
+
+## Docker
 
 ### Docker Compose
 
-1. Clone the Flowise project
-2. Go to `docker` folder at the root of the project
-3. Copy `.env.example` file, paste it into the same location, and rename to `.env` file
-4. `docker compose up -d`
-5. Open [http://localhost:3000](http://localhost:3000)
-6. You can bring the containers down by `docker compose stop`
+1. Go to the `docker` folder at the root of the project
+2. Copy `.env.example` to `.env`
+3. `docker compose up -d`
+4. Open [http://localhost:3000](http://localhost:3000)
+5. Bring the containers down with `docker compose stop`
 
 ### Docker Image
 
-1. Build the image locally:
+```bash
+docker build --no-cache -t loomflow .
+docker run -d --name loomflow -p 3000:3000 loomflow
+docker stop loomflow
+```
 
-    ```bash
-    docker build --no-cache -t flowise .
-    ```
+## Developers
 
-2. Run image:
+Loomflow keeps the upstream monorepo layout:
 
-    ```bash
-    docker run -d --name flowise -p 3000:3000 flowise
-    ```
-
-3. Stop image:
-
-    ```bash
-    docker stop flowise
-    ```
-
-## 👨‍💻 Developers
-
-Flowise has 3 different modules in a single mono repository.
-
--   `server`: Node backend to serve API logics
--   `ui`: React frontend
--   `components`: Third-party nodes integrations
--   `api-documentation`: Auto-generated swagger-ui API docs from express
+-   `server`: Node backend that serves the API logic
+-   `ui`: React frontend (MUI theme in `packages/ui/src/themes`)
+-   `components`: third-party node integrations
+-   `api-documentation`: auto-generated swagger-ui API docs
 
 ### Prerequisite
 
@@ -104,13 +90,13 @@ Flowise has 3 different modules in a single mono repository.
 1.  Clone the repository:
 
     ```bash
-    git clone https://github.com/FlowiseAI/Flowise.git
+    git clone <your-loomflow-repository-url> loomflow
     ```
 
 2.  Go into repository folder:
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 3.  Install all dependencies of all modules:
@@ -168,76 +154,22 @@ Flowise has 3 different modules in a single mono repository.
 
     Any code changes will reload the app automatically on [http://localhost:8080](http://localhost:8080)
 
-## 🌱 Env Variables
+## Env Variables
 
-Flowise supports different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
+Loomflow supports environment variables to configure your instance. Specify them in the `.env` file inside the `packages/server` folder. The variable names are unchanged from upstream, see the [upstream reference](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables).
 
-## 📖 Documentation
+## Origin and licence
 
-You can view the Flowise Docs [here](https://docs.flowiseai.com/)
+Loomflow is a modified fork of [Flowise](https://github.com/FlowiseAI/Flowise) by FlowiseAI, Inc., used under the [Apache License, Version 2.0](LICENSE.md). It is an independent project and is not affiliated with or endorsed by FlowiseAI, Inc. "Flowise" is a trademark of its owner and is not used here as the product name.
 
-## 🌐 Self Host
+-   The original copyright and licence notices are kept intact in [LICENSE.md](LICENSE.md). Please read it: it contains an exception, so content under `packages/server/src/enterprise` and any file carrying an explicit FlowiseAI copyright notice is under a separate commercial licence and is not covered by Apache 2.0. Those files are unmodified in this fork.
+-   [NOTICE.md](NOTICE.md) summarises what was changed from upstream.
+-   Upstream documentation at [docs.flowiseai.com](https://docs.flowiseai.com/) still describes most of the underlying behaviour.
 
-Deploy Flowise self-hosted in your existing infrastructure, we support various [deployments](https://docs.flowiseai.com/configuration/deployment)
+## Contributing
 
--   [AWS](https://docs.flowiseai.com/configuration/deployment/aws)
--   [Azure](https://docs.flowiseai.com/configuration/deployment/azure)
--   [Digital Ocean](https://docs.flowiseai.com/configuration/deployment/digital-ocean)
--   [GCP](https://docs.flowiseai.com/configuration/deployment/gcp)
--   [Alibaba Cloud](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Flowise社区版)
--   <details>
-      <summary>Others</summary>
+See the [Contributing Guide](CONTRIBUTING.md).
 
-    -   [Railway](https://docs.flowiseai.com/configuration/deployment/railway)
+## License
 
-        [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pn4G8S?referralCode=WVNPD9)
-
-    -   [Northflank](https://northflank.com/stacks/deploy-flowiseai)
-
-        [![Deploy to Northflank](https://assets.northflank.com/deploy_to_northflank_smm_36700fb050.svg)](https://northflank.com/stacks/deploy-flowiseai)
-
-    -   [Render](https://docs.flowiseai.com/configuration/deployment/render)
-
-        [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://docs.flowiseai.com/configuration/deployment/render)
-
-    -   [HuggingFace Spaces](https://docs.flowiseai.com/configuration/deployment/hugging-face)
-
-        <a href="https://huggingface.co/spaces/FlowiseAI/Flowise"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="HuggingFace Spaces"></a>
-
-    -   [Elestio](https://elest.io/open-source/flowiseai)
-
-        [![Deploy on Elestio](https://elest.io/images/logos/deploy-to-elestio-btn.png)](https://elest.io/open-source/flowiseai)
-
-    -   [Sealos](https://template.sealos.io/deploy?templateName=flowise)
-
-        [![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://template.sealos.io/deploy?templateName=flowise)
-
-    -   [RepoCloud](https://repocloud.io/details/?app_id=29)
-
-        [![Deploy on RepoCloud](https://d16t0pc4846x52.cloudfront.net/deploy.png)](https://repocloud.io/details/?app_id=29)
-
-      </details>
-
-## ☁️ Flowise Cloud
-
-Get Started with [Flowise Cloud](https://flowiseai.com/).
-
-## 🙋 Support
-
-Feel free to ask any questions, raise problems, and request new features in [Discussion](https://github.com/FlowiseAI/Flowise/discussions).
-
-## 🙌 Contributing
-
-Thanks go to these awesome contributors
-
-<a href="https://github.com/FlowiseAI/Flowise/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=FlowiseAI/Flowise" />
-</a><br><br>
-
-See [Contributing Guide](CONTRIBUTING.md). Reach out to us at [Discord](https://discord.gg/jbaHfsRVBW) if you have any questions or issues.
-
-[![Star History Chart](https://api.star-history.com/svg?repos=FlowiseAI/Flowise&type=Timeline)](https://star-history.com/#FlowiseAI/Flowise&Date)
-
-## 📄 License
-
-Source code in this repository is made available under the [Apache License Version 2.0](LICENSE.md).
+Source code in this repository is made available under the [Apache License Version 2.0](LICENSE.md), subject to the commercial exception described above.

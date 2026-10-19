@@ -1,3 +1,5 @@
-## ⚠️ IMPORTANT NOTICE: PRODUCT SUNSET ⚠️
+## Security policy
 
-Flowise is officially being sunset and will soon cease active maintenance or support. As a result, **we are no longer accepting new security vulnerability reports for this repository.** You can find more information [here](https://flowiseai.com/sunset).
+Loomflow is a modified fork of Flowise. Upstream Flowise has announced it is being sunset, so security reports for the original project are no longer handled there.
+
+If you find a vulnerability in Loomflow, please do not open a public issue. Contact the maintainer privately at adil.mern.ai@gmail.com with a description and steps to reproduce.

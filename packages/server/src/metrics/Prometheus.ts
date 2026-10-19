@@ -59,7 +59,7 @@ export class Prometheus implements IMetricsProvider {
         try {
             const versionGaugeCounter = new promClient.Gauge({
                 name: 'flowise_version_info',
-                help: 'Flowise version info.',
+                help: 'Loomflow version info.',
                 labelNames: ['version'],
                 registers: [this.register] // Explicitly set the registry
             })

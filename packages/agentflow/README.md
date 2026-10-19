@@ -138,7 +138,7 @@ Run `cd examples && npm install && npm run dev` to try them locally.
 <!-- prettier-ignore -->
 | Prop                 | Type                                       | Default        | Description                                                     |
 | -------------------- | ------------------------------------------ | -------------- | --------------------------------------------------------------- |
-| `apiBaseUrl`         | `string`                                   | **(required)** | Flowise API server endpoint                                     |
+| `apiBaseUrl`         | `string`                                   | **(required)** | Loomflow API server endpoint                                     |
 | `token`              | `string`                                   | —              | Authentication token for API calls                              |
 | `requestInterceptor` | `(config: InternalAxiosRequestConfig) => InternalAxiosRequestConfig` | — | Customize outgoing API requests (e.g., set `withCredentials`, add headers). The callback receives the full Axios request config — only modify what you need. See [Security: requestInterceptor](#security-requestinterceptor) below. |
 | `initialFlow`        | `FlowData`                                 | —              | Initial flow data to render (uncontrolled — only used on mount) |
@@ -225,9 +225,9 @@ Visit the [examples](./examples) directory for more usage patterns. See [TESTS.m
 
 ### API Connection Issues
 
--   **CORS errors** — Ensure the Flowise server allows requests from your app's origin. Check the Flowise CORS configuration.
+-   **CORS errors** — Ensure the Loomflow server allows requests from your app's origin. Check the Loomflow CORS configuration.
 -   **401 Unauthorized** — Use an API Key (Settings > API Keys), not a JWT user token. Verify the key is passed via the `token` prop.
--   **Wrong `apiBaseUrl`** — The URL must point to the Flowise API root (e.g., `http://localhost:3000`), not a subpath.
+-   **Wrong `apiBaseUrl`** — The URL must point to the Loomflow API root (e.g., `http://localhost:3000`), not a subpath.
 
 ### Validation Errors
 
@@ -248,7 +248,7 @@ Visit the [examples](./examples) directory for more usage patterns. See [TESTS.m
 
 ### Async Options Not Loading
 
--   **Empty dropdowns for models/tools/credentials** — These load from the Flowise API. Verify `apiBaseUrl` and `token` are correct and the server is running.
+-   **Empty dropdowns for models/tools/credentials** — These load from the Loomflow API. Verify `apiBaseUrl` and `token` are correct and the server is running.
 -   **Network errors in console** — Check browser DevTools for failed requests. The API client logs errors to the console.
 
 ## Documentation

@@ -356,7 +356,7 @@ class Start_Agentflow implements INode {
                 name: 'callbackSecret',
                 type: 'string',
                 description:
-                    'Optional. If set, outgoing callback POSTs are signed with HMAC-SHA256 and delivered as X-Flowise-Signature: sha256=<hex> so your callback endpoint can verify the request came from Flowise.',
+                    'Optional. If set, outgoing callback POSTs are signed with HMAC-SHA256 and delivered as X-Flowise-Signature: sha256=<hex> so your callback endpoint can verify the request came from Loomflow.',
                 optional: true,
                 show: {
                     startInputType: 'webhookTrigger',

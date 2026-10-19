@@ -2,8 +2,6 @@
 
 # Loomflow
 
-English | [中文](./README-ZH.md)
-
 <h3>Build AI Agents, Visually</h3>
 
 ![Flowise](https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_agentflow.gif?raw=true)

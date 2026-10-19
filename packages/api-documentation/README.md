@@ -2,8 +2,6 @@
 
 # Loomflow API Docs
 
-English | [中文](./README-ZH.md)
-
 A list of Loomflow public APIs, allowing users to programmatically execute many of the same tasks as the same in the GUI.
 
 To run this standalone:

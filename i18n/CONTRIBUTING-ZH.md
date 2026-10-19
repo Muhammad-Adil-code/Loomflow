@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# 贡献给 Flowise
+# 贡献给 Loomflow
 
 [English](../CONTRIBUTING.md) | 中文
 
@@ -8,23 +8,23 @@
 
 ## ⭐ 点赞
 
-点赞并分享[Github 仓库](https://github.com/FlowiseAI/Flowise)。
+点赞并分享 Loomflow 仓库。
 
 ## 🙋 问题和回答
 
-在[问题和回答](https://github.com/FlowiseAI/Flowise/discussions/categories/q-a)部分搜索任何问题，如果找不到，可以毫不犹豫地创建一个。这可能会帮助到其他有类似问题的人。
+在仓库的 Issues 中搜索任何问题，如果找不到，可以毫不犹豫地创建一个。这可能会帮助到其他有类似问题的人。
 
 ## 🙌 分享 Chatflow
 
-是的！分享你如何使用 Flowise 是一种贡献方式。将你的 Chatflow 导出为 JSON，附上截图并在[展示和分享](https://github.com/FlowiseAI/Flowise/discussions/categories/show-and-tell)部分分享。
+是的！分享你如何使用 Loomflow 是一种贡献方式。将你的 Chatflow 导出为 JSON，附上截图并在 Issue 或讨论中分享。
 
 ## 💡 想法
 
-欢迎各种想法，如新功能、应用集成和区块链网络。在[想法](https://github.com/FlowiseAI/Flowise/discussions/categories/ideas)部分提交。
+欢迎各种想法，如新功能、应用集成和区块链网络。以 Issue 的形式提交。
 
 ## 🐞 报告错误
 
-发现问题了吗？[报告它](https://github.com/FlowiseAI/Flowise/issues/new/choose)。
+发现问题了吗？在仓库中提交 Issue。
 
 ## 👨‍💻 贡献代码
 
@@ -36,7 +36,7 @@
 
 ### 开发人员
 
-Flowise 在一个单一的单体存储库中有 3 个不同的模块。
+Loomflow 在一个单一的单体存储库中有 3 个不同的模块。
 
 -   `server`：用于提供 API 逻辑的 Node 后端
 -   `ui`：React 前端
@@ -51,7 +51,7 @@ Flowise 在一个单一的单体存储库中有 3 个不同的模块。
 
 #### 逐步指南
 
-1. Fork 官方的[Flowise Github 仓库](https://github.com/FlowiseAI/Flowise)。
+1. Fork Loomflow 仓库。
 
 2. 克隆你 fork 的存储库。
 
@@ -65,7 +65,7 @@ Flowise 在一个单一的单体存储库中有 3 个不同的模块。
 5. 进入存储库文件夹
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 6. 安装所有模块的依赖项：
@@ -112,22 +112,22 @@ Flowise 在一个单一的单体存储库中有 3 个不同的模块。
     pnpm start
     ```
 
-11. 提交代码并从指向 [Flowise 主分支](https://github.com/FlowiseAI/Flowise/tree/main) 的分叉分支上提交 Pull Request。
+11. 提交代码并从指向 `main` 分支的分叉分支上提交 Pull Request。
 
 ## 🌱 环境变量
 
-Flowise 支持不同的环境变量来配置您的实例。您可以在 `packages/server` 文件夹中的 `.env` 文件中指定以下变量。阅读[更多信息](https://docs.flowiseai.com/configuration/environment-variables)
+Loomflow 支持不同的环境变量来配置您的实例。您可以在 `packages/server` 文件夹中的 `.env` 文件中指定以下变量。阅读[更多信息](https://docs.flowiseai.com/configuration/environment-variables)
 
 | 变量名                         | 描述                                                     | 类型                                            | 默认值                              |
 | ------------------------------ | -------------------------------------------------------- | ----------------------------------------------- | ----------------------------------- |
-| `PORT`                         | Flowise 运行的 HTTP 端口                                 | 数字                                            | 3000                                |
+| `PORT`                         | Loomflow 运行的 HTTP 端口                                 | 数字                                            | 3000                                |
 | `FLOWISE_FILE_SIZE_LIMIT`      | 上传文件大小限制                                         | 字符串                                          | 50mb                                |
 | `DEBUG`                        | 打印组件的日志                                           | 布尔值                                          |                                     |
 | `LOG_PATH`                     | 存储日志文件的位置                                       | 字符串                                          | `your-path/Flowise/logs`            |
 | `LOG_LEVEL`                    | 日志的不同级别                                           | 枚举字符串: `error`, `info`, `verbose`, `debug` | `info`                              |
 | `TOOL_FUNCTION_BUILTIN_DEP`    | 用于工具函数的 NodeJS 内置模块                           | 字符串                                          |                                     |
 | `TOOL_FUNCTION_EXTERNAL_DEP`   | 用于工具函数的外部模块                                   | 字符串                                          |                                     |
-| `DATABASE_TYPE`                | 存储 Flowise 数据的数据库类型                            | 枚举字符串: `sqlite`, `mysql`, `postgres`       | `sqlite`                            |
+| `DATABASE_TYPE`                | 存储 Loomflow 数据的数据库类型                            | 枚举字符串: `sqlite`, `mysql`, `postgres`       | `sqlite`                            |
 | `DATABASE_PATH`                | 数据库保存的位置（当 `DATABASE_TYPE` 是 sqlite 时）      | 字符串                                          | `your-home-dir/.flowise`            |
 | `DATABASE_HOST`                | 主机 URL 或 IP 地址（当 `DATABASE_TYPE` 不是 sqlite 时） | 字符串                                          |                                     |
 | `DATABASE_PORT`                | 数据库端口（当 `DATABASE_TYPE` 不是 sqlite 时）          | 字符串                                          |                                     |
@@ -156,8 +156,8 @@ npx flowise start --PORT=3000 --DEBUG=true
 
 ## 📖 贡献文档
 
-[Flowise 文档](https://github.com/FlowiseAI/FlowiseDocs)
+[Flowise 文档（上游）](https://github.com/FlowiseAI/FlowiseDocs)
 
 ## 🏷️ Pull Request 流程
 
-当您打开一个 Pull Request 时，FlowiseAI 团队的成员将自动收到通知/指派。您也可以在 [Discord](https://discord.gg/jbaHfsRVBW) 上联系我们。
+当您打开一个 Pull Request 时，维护者将收到通知。

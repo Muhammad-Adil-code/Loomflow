@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# Contributing to Flowise
+# Contributing to Loomflow
 
 English | [中文](./i18n/CONTRIBUTING-ZH.md)
 
@@ -8,23 +8,23 @@ We appreciate any form of contributions.
 
 ## ⭐ Star
 
-Star and share the [Github Repo](https://github.com/FlowiseAI/Flowise).
+Star and share the Loomflow repository.
 
 ## 🙋 Q&A
 
-Search up for any questions in [Q&A section](https://github.com/FlowiseAI/Flowise/discussions/categories/q-a), if you can't find one, don't hesitate to create one. It might helps others that have similar question.
+Search the repository issues for any questions, and if you can't find one, don't hesitate to open a new issue. It might helps others that have similar question.
 
 ## 🙌 Share Chatflow
 
-Yes! Sharing how you use Flowise is a way of contribution. Export your chatflow as JSON, attach a screenshot and share it in [Show and Tell section](https://github.com/FlowiseAI/Flowise/discussions/categories/show-and-tell).
+Yes! Sharing how you use Loomflow is a way of contribution. Export your chatflow as JSON, attach a screenshot and share it in an issue or discussion.
 
 ## 💡 Ideas
 
-Ideas are welcome such as new feature, apps integration, and blockchain networks. Submit in [Ideas section](https://github.com/FlowiseAI/Flowise/discussions/categories/ideas).
+Ideas are welcome such as new feature, apps integration, and blockchain networks. Submit them as an issue.
 
 ## 🐞 Report Bugs
 
-Found an issue? [Report it](https://github.com/FlowiseAI/Flowise/issues/new/choose).
+Found an issue? Open an issue in the repository.
 
 ## 👨‍💻 Contribute to Code
 
@@ -36,7 +36,7 @@ Not sure what to contribute? Some ideas:
 
 ### Developers
 
-Flowise has 3 different modules in a single mono repository.
+Loomflow has 3 different modules in a single mono repository.
 
 -   `server`: Node backend to serve API logics
 -   `ui`: React frontend
@@ -51,7 +51,7 @@ Flowise has 3 different modules in a single mono repository.
 
 #### Step by step
 
-1. Fork the official [Flowise Github Repository](https://github.com/FlowiseAI/Flowise).
+1. Fork the Loomflow repository.
 
 2. Clone your forked repository.
 
@@ -65,7 +65,7 @@ Flowise has 3 different modules in a single mono repository.
 5. Go into repository folder
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 6. Install all dependencies of all modules:
@@ -114,7 +114,7 @@ Flowise has 3 different modules in a single mono repository.
 
     to make sure everything works fine in production.
 
-11. Commit code and submit Pull Request from forked branch pointing to [Flowise main](https://github.com/FlowiseAI/Flowise/tree/main).
+11. Commit code and submit Pull Request from forked branch pointing to the `main` branch.
 
 ### Adding or modifying credential definitions
 
@@ -179,11 +179,11 @@ If in doubt, use `type: 'password'`. The only cost is that the field must be re-
 
 ## 🌱 Env Variables
 
-Flowise support different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://docs.flowiseai.com/configuration/environment-variables)
+Loomflow support different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://docs.flowiseai.com/configuration/environment-variables)
 
 | Variable                             | Description                                                                                                                                                                                                                                                                       | Type                                             | Default                             |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------- |
-| PORT                                 | The HTTP port Flowise runs on                                                                                                                                                                                                                                                     | Number                                           | 3000                                |
+| PORT                                 | The HTTP port Loomflow runs on                                                                                                                                                                                                                                                     | Number                                           | 3000                                |
 | CORS_ALLOW_CREDENTIALS               | Enables CORS `Access-Control-Allow-Credentials` when `true`                                                                                                                                                                                                                       | Boolean                                          | false                               |
 | CORS_ORIGINS                         | The allowed origins for all cross-origin HTTP calls                                                                                                                                                                                                                               | String                                           |                                     |
 | MCP_CORS_ORIGINS                     | The allowed origins for MCP endpoint cross-origin calls. If unset, only non-browser (no Origin header) requests are allowed. Set to `*` to allow all origins.                                                                                                                     | String                                           |                                     |
@@ -238,11 +238,11 @@ npx flowise start --PORT=3000 --DEBUG=true
 
 ## 📖 Contribute to Docs
 
-[Flowise Docs](https://github.com/FlowiseAI/FlowiseDocs)
+[Flowise Docs (upstream)](https://github.com/FlowiseAI/FlowiseDocs)
 
 ## 🏷️ Pull Request process
 
-A member of the FlowiseAI team will automatically be notified/assigned when you open a pull request. You can also reach out to us on [Discord](https://discord.gg/jbaHfsRVBW).
+A maintainer will be notified when you open a pull request.
 
 ## 📜 Code of Conduct
 

@@ -5,10 +5,6 @@
 <img src="./images/loomflow_dark.svg#gh-dark-mode-only" alt="Loomflow" width="320">
 </p>
 
-<div align="center">
-
-</div>
-
 # Loomflow
 
 <p align="center">

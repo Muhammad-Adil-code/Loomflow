@@ -1,11 +1,11 @@
-# Loomflow Docker Hub Image
+# Loomflow with Docker Compose
 
-Starts Loomflow from the upstream Flowise [DockerHub Image](https://hub.docker.com/r/flowiseai/flowise)
+Builds Loomflow from this repository's `Dockerfile` and starts it.
 
 ## Usage
 
 1. Create `.env` file and specify the `PORT` (refer to `.env.example`)
-2. `docker compose up -d`
+2. `docker compose up -d --build`
 3. Open [http://localhost:3000](http://localhost:3000)
 4. You can bring the containers down by `docker compose stop`
 

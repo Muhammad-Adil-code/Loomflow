@@ -21,11 +21,11 @@
 
 下载并安装 [NodeJS](https://nodejs.org/en/download) >= 20.0.0
 
-1. 安装 Flowise
+1. 安装 Loomflow
     ```bash
     npm install -g flowise
     ```
-2. 启动 Flowise
+2. 启动 Loomflow
 
     ```bash
     npx flowise start
@@ -62,7 +62,7 @@
 
 ## 👨‍💻 开发者
 
-Flowise 在一个单一的代码库中有 3 个不同的模块。
+Loomflow 在一个单一的代码库中有 3 个不同的模块。
 
 -   `server`：用于提供 API 逻辑的 Node 后端
 -   `ui`：React 前端
@@ -86,7 +86,7 @@ Flowise 在一个单一的代码库中有 3 个不同的模块。
 2. 进入仓库文件夹
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 3. 安装所有模块的依赖：
@@ -123,7 +123,7 @@ Flowise 在一个单一的代码库中有 3 个不同的模块。
 
 ## 🌱 环境变量
 
-Flowise 支持不同的环境变量来配置您的实例。您可以在 `packages/server` 文件夹中的 `.env` 文件中指定以下变量。了解更多信息，请阅读[文档](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
+Loomflow 支持不同的环境变量来配置您的实例。您可以在 `packages/server` 文件夹中的 `.env` 文件中指定以下变量。了解更多信息，请阅读[文档](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
 
 ## 📖 文档
 
@@ -131,7 +131,7 @@ Flowise 支持不同的环境变量来配置您的实例。您可以在 `package
 
 ## 🌐 自托管
 
-在您现有的基础设施中部署自托管的 Flowise，我们支持各种[部署](https://docs.flowiseai.com/configuration/deployment)
+在您现有的基础设施中部署自托管的 Loomflow，我们支持各种[部署](https://docs.flowiseai.com/configuration/deployment)
 
 -   [AWS](https://docs.flowiseai.com/deployment/aws)
 -   [Azure](https://docs.flowiseai.com/deployment/azure)

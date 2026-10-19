@@ -21,11 +21,11 @@
 
 下載並安裝 [NodeJS](https://nodejs.org/en/download) >= 20.0.0
 
-1. 安裝 Flowise
+1. 安裝 Loomflow
     ```bash
     npm install -g flowise
     ```
-2. 啟動 Flowise
+2. 啟動 Loomflow
 
     ```bash
     npx flowise start
@@ -37,7 +37,7 @@
 
 ### Docker Compose
 
-1. 複製 Flowise 專案
+1. 複製 Loomflow 專案
 2. 進入專案根目錄的 `docker` 資料夾
 3. 複製 `.env.example` 文件，貼到相同位置，並重新命名為 `.env` 文件
 4. `docker compose up -d`
@@ -63,7 +63,7 @@
 
 ## 👨‍💻 開發者
 
-Flowise 在單個 mono 儲存庫中有 3 個不同的模組。
+Loomflow 在單個 mono 儲存庫中有 3 個不同的模組。
 
 -   `server`: 提供 API 邏輯的 Node 後端
 -   `ui`: React 前端
@@ -88,7 +88,7 @@ Flowise 在單個 mono 儲存庫中有 3 個不同的模組。
 2.  進入儲存庫文件夾
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 3.  安裝所有模組的所有依賴項：
@@ -134,7 +134,7 @@ Flowise 在單個 mono 儲存庫中有 3 個不同的模組。
 
 ## 🌱 環境變數
 
-Flowise 支持不同的環境變數來配置您的實例。您可以在 `packages/server` 文件夾中的 `.env` 文件中指定以下變數。閱讀 [更多](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
+Loomflow 支持不同的環境變數來配置您的實例。您可以在 `packages/server` 文件夾中的 `.env` 文件中指定以下變數。閱讀 [更多](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
 
 ## 📖 文檔
 
@@ -142,7 +142,7 @@ Flowise 支持不同的環境變數來配置您的實例。您可以在 `package
 
 ## 🌐 自行架設
 
-在您現有的基礎設施中部署 Flowise，我們支持各種自行架設選項 [部署](https://docs.flowiseai.com/configuration/deployment)
+在您現有的基礎設施中部署 Loomflow，我們支持各種自行架設選項 [部署](https://docs.flowiseai.com/configuration/deployment)
 
 -   [AWS](https://docs.flowiseai.com/configuration/deployment/aws)
 -   [Azure](https://docs.flowiseai.com/configuration/deployment/azure)

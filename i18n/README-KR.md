@@ -21,11 +21,11 @@
 
 20.0.0 버전 이상의 [NodeJS](https://nodejs.org/en/download) 다운로드 및 설치
 
-1. Flowise 설치
+1. Loomflow 설치
     ```bash
     npm install -g flowise
     ```
-2. Flowise 시작하기
+2. Loomflow 시작하기
 
     ```bash
     npx flowise start
@@ -62,7 +62,7 @@
 
 ## 👨‍💻 개발자들을 위한 가이드
 
-Flowise는 단일 리포지토리에 3개의 서로 다른 모듈이 있습니다.
+Loomflow는 단일 리포지토리에 3개의 서로 다른 모듈이 있습니다.
 
 -   `server`: API 로직을 제공하는 노드 백엔드
 -   `ui`: 리액트 프론트엔드
@@ -86,7 +86,7 @@ Flowise는 단일 리포지토리에 3개의 서로 다른 모듈이 있습니�
 2. 리포지토리 폴더로 이동
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 3. 모든 모듈의 종속성 설치:
@@ -123,7 +123,7 @@ Flowise는 단일 리포지토리에 3개의 서로 다른 모듈이 있습니�
 
 ## 🌱 환경 변수
 
-Flowise는 인스턴스 구성을 위한 다양한 환경 변수를 지원합니다. `packages/server` 폴더 내 `.env` 파일에 다양한 환경 변수를 지정할 수 있습니다. [자세히 보기](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
+Loomflow는 인스턴스 구성을 위한 다양한 환경 변수를 지원합니다. `packages/server` 폴더 내 `.env` 파일에 다양한 환경 변수를 지정할 수 있습니다. [자세히 보기](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
 
 ## 📖 공식 문서
 
@@ -131,7 +131,7 @@ Flowise는 인스턴스 구성을 위한 다양한 환경 변수를 지원합니
 
 ## 🌐 자체 호스팅 하기
 
-기존 인프라 환경에서 Flowise를 자체 호스팅으로 배포하세요. 다양한 배포 [deployments](https://docs.flowiseai.com/configuration/deployment) 방법을 지원합니다.
+기존 인프라 환경에서 Loomflow를 자체 호스팅으로 배포하세요. 다양한 배포 [deployments](https://docs.flowiseai.com/configuration/deployment) 방법을 지원합니다.
 
 -   [AWS](https://docs.flowiseai.com/deployment/aws)
 -   [Azure](https://docs.flowiseai.com/deployment/azure)

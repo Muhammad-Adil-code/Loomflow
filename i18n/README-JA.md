@@ -21,11 +21,11 @@
 
 [NodeJS](https://nodejs.org/en/download) >= 20.0.0 をダウンロードしてインストール
 
-1. Flowise のインストール
+1. Loomflow のインストール
     ```bash
     npm install -g flowise
     ```
-2. Flowise の実行
+2. Loomflow の実行
 
     ```bash
     npx flowise start
@@ -62,7 +62,7 @@
 
 ## 👨‍💻 開発者向け
 
-Flowise には、3 つの異なるモジュールが 1 つの mono リポジトリにあります。
+Loomflow には、3 つの異なるモジュールが 1 つの mono リポジトリにあります。
 
 -   `server`: API ロジックを提供する Node バックエンド
 -   `ui`: React フロントエンド
@@ -86,7 +86,7 @@ Flowise には、3 つの異なるモジュールが 1 つの mono リポジト�
 2. リポジトリフォルダに移動
 
     ```bash
-    cd Flowise
+    cd loomflow
     ```
 
 3. すべてのモジュールの依存関係をインストール:
@@ -123,7 +123,7 @@ Flowise には、3 つの異なるモジュールが 1 つの mono リポジト�
 
 ## 🌱 環境変数
 
-Flowise は、インスタンスを設定するためのさまざまな環境変数をサポートしています。`packages/server` フォルダ内の `.env` ファイルで以下の変数を指定することができる。[続き](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)を読む
+Loomflow は、インスタンスを設定するためのさまざまな環境変数をサポートしています。`packages/server` フォルダ内の `.env` ファイルで以下の変数を指定することができる。[続き](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)を読む
 
 ## 📖 ドキュメント
 
@@ -131,7 +131,7 @@ Flowise は、インスタンスを設定するためのさまざまな環境変
 
 ## 🌐 セルフホスト
 
-お客様の既存インフラに Flowise をセルフホストでデプロイ、様々な[デプロイ](https://docs.flowiseai.com/configuration/deployment)をサポートします
+お客様の既存インフラに Loomflow をセルフホストでデプロイ、様々な[デプロイ](https://docs.flowiseai.com/configuration/deployment)をサポートします
 
 -   [AWS](https://docs.flowiseai.com/deployment/aws)
 -   [Azure](https://docs.flowiseai.com/deployment/azure)

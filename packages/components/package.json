@@ -1,7 +1,7 @@
 {
     "name": "flowise-components",
     "version": "3.1.4",
-    "description": "Flowiseai Components",
+    "description": "Loomflow Components",
     "main": "dist/src/index",
     "types": "dist/src/index.d.ts",
     "exports": {

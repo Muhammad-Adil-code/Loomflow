@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# Flowise
+# Loomflow
 
 English | [中文](./README-ZH.md)
 
@@ -10,11 +10,11 @@ English | [中文](./README-ZH.md)
 
 ## ⚡Quick Start
 
-1. Install Flowise
+1. Install Loomflow
     ```bash
     npm install -g flowise
     ```
-2. Start Flowise
+2. Start Loomflow
 
     ```bash
     npx flowise start
@@ -24,7 +24,7 @@ English | [中文](./README-ZH.md)
 
 ## 🌱 Env Variables
 
-Flowise support different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
+Loomflow support different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
 
 You can also specify the env variables when using `npx`. For example:
 
@@ -37,7 +37,7 @@ npx flowise start --PORT=3000 --DEBUG=true
 We use [Cypress](https://github.com/cypress-io) for our e2e testing. If you want to run the test suite in dev mode please follow this guide:
 
 ```sh
-cd Flowise/packages/server
+cd loomflow/packages/server
 pnpm install
 ./node_modules/.bin/cypress install
 pnpm build

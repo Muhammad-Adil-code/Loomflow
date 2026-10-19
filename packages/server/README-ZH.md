@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# Flowise
+# Loomflow
 
 [English](./README.md) | 中文
 
@@ -10,11 +10,11 @@
 
 ## ⚡ 快速入门
 
-1. 安装 Flowise
+1. 安装 Loomflow
     ```bash
     npm install -g flowise
     ```
-2. 启动 Flowise
+2. 启动 Loomflow
 
     ```bash
     npx flowise start
@@ -24,7 +24,7 @@
 
 ## 🌱 环境变量
 
-Flowise 支持不同的环境变量来配置您的实例。您可以在`packages/server`文件夹中的`.env`文件中指定以下变量。阅读[更多](https://docs.flowiseai.com/configuration/environment-variables)
+Loomflow 支持不同的环境变量来配置您的实例。您可以在`packages/server`文件夹中的`.env`文件中指定以下变量。阅读[更多](https://docs.flowiseai.com/configuration/environment-variables)
 
 您还可以在使用`npx`时指定环境变量。例如：
 
@@ -38,7 +38,7 @@ npx flowise start --PORT=3000 --DEBUG=true
 
 ## 🌐 自托管
 
-在您现有的基础设施中部署自托管的 Flowise，我们支持各种[部署](https://docs.flowiseai.com/configuration/deployment)
+在您现有的基础设施中部署自托管的 Loomflow，我们支持各种[部署](https://docs.flowiseai.com/configuration/deployment)
 
 -   [AWS](https://docs.flowiseai.com/deployment/aws)
 -   [Azure](https://docs.flowiseai.com/deployment/azure)

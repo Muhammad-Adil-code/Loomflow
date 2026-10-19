@@ -4,7 +4,7 @@
 
 [English](./README.md) | 中文
 
-Flowise 的应用集成。包含节点和凭据。
+Loomflow 的应用集成。包含节点和凭据。
 
 ![Flowise](https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_agentflow.gif?raw=true)
 

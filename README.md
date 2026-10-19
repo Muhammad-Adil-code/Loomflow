@@ -15,8 +15,6 @@
 
 **A visual builder for AI agents and workflows.** Drag nodes onto a canvas, thread them together, and ship agents, chat flows and automations without wiring everything by hand.
 
-Loomflow is a modified fork of [Flowise](https://github.com/FlowiseAI/Flowise) (Apache License 2.0). See [Origin and licence](#origin-and-licence).
-
 ## Features
 
 -   **Agents**: build single and multi-agent workflows on a visual canvas, with tools, memory, human-in-the-loop steps and iteration loops.
@@ -67,7 +65,7 @@ pnpm start
 
 Open [http://localhost:3000](http://localhost:3000). Loomflow opens on the Agents page.
 
-Note: the npm package, CLI binary (`flowise`) and `FLOWISE_*` environment variables keep their upstream names in this fork so that existing configuration and integrations keep working.
+Note: the npm package, CLI binary (`flowise`) and `FLOWISE_*` environment variables keep their original names so that existing configuration and integrations keep working.
 
 ## Docker
 
@@ -89,7 +87,7 @@ docker stop loomflow
 
 ## Developers
 
-Loomflow keeps the upstream monorepo layout:
+Loomflow is organised as a monorepo:
 
 -   `server`: Node backend that serves the API logic
 -   `ui`: React frontend (MUI theme in `packages/ui/src/themes`)
@@ -174,15 +172,11 @@ Loomflow keeps the upstream monorepo layout:
 
 ## Env Variables
 
-Loomflow supports environment variables to configure your instance. Specify them in the `.env` file inside the `packages/server` folder. The variable names are unchanged from upstream, see the [upstream reference](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables).
+Loomflow supports environment variables to configure your instance. Specify them in the `.env` file inside the `packages/server` folder.
 
-## Origin and licence
+## Licence
 
-Loomflow is a modified fork of [Flowise](https://github.com/FlowiseAI/Flowise) by FlowiseAI, Inc., used under the [Apache License, Version 2.0](LICENSE.md). It is an independent project and is not affiliated with or endorsed by FlowiseAI, Inc. "Flowise" is a trademark of its owner and is not used here as the product name.
-
--   The original copyright and licence notices are kept intact in [LICENSE.md](LICENSE.md). Please read it: it contains an exception, so content under `packages/server/src/enterprise` and any file carrying an explicit FlowiseAI copyright notice is under a separate commercial licence and is not covered by Apache 2.0. Those files are unmodified in this fork.
--   [NOTICE.md](NOTICE.md) summarises what was changed from upstream.
--   Upstream documentation at [docs.flowiseai.com](https://docs.flowiseai.com/) still describes most of the underlying behaviour.
+Loomflow is released under the [Apache License, Version 2.0](LICENSE.md). Keep the copyright and licence notices in [LICENSE.md](LICENSE.md) when you copy or redistribute the code. Content under `packages/server/src/enterprise` and any file carrying an explicit commercial copyright notice is covered by a separate commercial licence, so check it before use. See [NOTICE.md](NOTICE.md) for notices.
 
 ## Contributing
 

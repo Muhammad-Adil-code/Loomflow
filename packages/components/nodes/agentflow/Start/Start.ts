@@ -312,7 +312,7 @@ class Start_Agentflow implements INode {
                 label: 'Response Mode',
                 name: 'webhookResponseMode',
                 type: 'options',
-                description: 'How Flowise replies to the incoming webhook request.',
+                description: 'How Loomflow replies to the incoming webhook request.',
                 options: [
                     {
                         label: 'Synchronous',
@@ -343,7 +343,7 @@ class Start_Agentflow implements INode {
                 name: 'callbackUrl',
                 type: 'string',
                 description:
-                    'Optional. Flowise will POST the flow result to this URL when the flow finishes. Leave blank for fire-and-forget — the flow still runs in the background, but no callback is delivered.',
+                    'Optional. Loomflow will POST the flow result to this URL when the flow finishes. Leave blank for fire-and-forget — the flow still runs in the background, but no callback is delivered.',
                 placeholder: 'https://example.com/flowise-callback',
                 optional: true,
                 show: {

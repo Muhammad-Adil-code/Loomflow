@@ -7,8 +7,6 @@
 
 <div align="center">
 
-English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)
-
 </div>
 
 # Loomflow

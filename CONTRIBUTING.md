@@ -2,8 +2,6 @@
 
 # Contributing to Loomflow
 
-English | [中文](./i18n/CONTRIBUTING-ZH.md)
-
 We appreciate any form of contributions.
 
 ## ⭐ Star

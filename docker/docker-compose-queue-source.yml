@@ -24,7 +24,7 @@ services:
             # Ensure the host directory is writable by that user (e.g. `chown -R 1000:1000 ../.flowise` on Linux hosts).
             - ../.flowise:/home/node/.flowise
         environment:
-            # --- Essential Flowise Vars ---
+            # --- Essential Loomflow Vars ---
             - PORT=${PORT:-3000}
             - DATABASE_PATH=/home/node/.flowise
             - SECRETKEY_PATH=/home/node/.flowise
@@ -49,7 +49,7 @@ services:
             # Container runs as the non-root `node` user, whose home is /home/node.
             - ../.flowise:/home/node/.flowise
         environment:
-            # --- Essential Flowise Vars ---
+            # --- Essential Loomflow Vars ---
             - WORKER_PORT=${WORKER_PORT:-5566} # Port for worker healthcheck
             - DATABASE_PATH=/home/node/.flowise
             - SECRETKEY_PATH=/home/node/.flowise

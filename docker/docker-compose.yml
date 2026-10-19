@@ -1,8 +1,11 @@
 version: '3.1'
 
 services:
-    flowise:
-        image: flowiseai/flowise:latest
+    loomflow:
+        build:
+            context: ..
+            dockerfile: Dockerfile
+        image: loomflow:latest
         restart: always
         environment:
             - PORT=${PORT}
@@ -163,4 +166,4 @@ services:
             # Container now runs as the non-root `node` user, whose home is /home/node.
             # Ensure the host directory is writable by that user (e.g. `chown -R 1000:1000 ~/.flowise` on Linux hosts).
             - ~/.flowise:/home/node/.flowise
-        entrypoint: /bin/sh -c "sleep 3; flowise start"
+        entrypoint: /bin/sh -c "sleep 3; pnpm start"

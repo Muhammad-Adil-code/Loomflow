@@ -236,7 +236,6 @@ npx flowise start --PORT=3000 --DEBUG=true
 
 ## 📖 Contribute to Docs
 
-[Flowise Docs (upstream)](https://github.com/FlowiseAI/FlowiseDocs)
 
 ## 🏷️ Pull Request process
 

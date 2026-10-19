@@ -11,7 +11,7 @@
   <img src="docs/demo.gif" alt="Loomflow demo" width="860">
 </p>
 
-<p align="center"><a href="docs/demo.mp4">Watch the full demo video (2 minutes)</a></p>
+<p align="center"><a href="docs/demo.mp4">Watch the full demo video (2 minutes)</a> &nbsp;|&nbsp; <a href="https://www.adilaidev.com/work/loomflow/">Project page on my portfolio</a></p>
 
 **A visual builder for AI agents and workflows.** Drag nodes onto a canvas, thread them together, and ship agents, chat flows and automations without wiring everything by hand.
 

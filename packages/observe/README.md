@@ -19,7 +19,7 @@
 
 ## Overview
 
-`@flowiseai/observe` is the runtime observability SDK for Flowise. It provides embeddable React components for viewing execution traces, node-level step details, and human-in-the-loop interactions for AI agent workflows built with Flowise.
+`@flowiseai/observe` is the runtime observability SDK for Loomflow. It provides embeddable React components for viewing execution traces, node-level step details, and human-in-the-loop interactions for AI agent workflows built with Loomflow.
 
 This is the "Observe" layer of the Build-Run-Observe trio alongside `@flowiseai/agentflow` (Build).
 
@@ -90,12 +90,12 @@ export default function App() {
 
 ### With HITL Callback
 
-The `onHumanInput` callback is how the host application handles human-in-the-loop responses. The SDK delegates routing entirely to the consumer — OSS calls Flowise directly, DevSite routes through the AgentForge proxy.
+The `onHumanInput` callback is how the host application handles human-in-the-loop responses. The SDK delegates routing entirely to the consumer — OSS calls Loomflow directly, DevSite routes through the AgentForge proxy.
 
 ```tsx
 <ExecutionsViewer
     onHumanInput={async (agentflowId, params) => {
-        // OSS: call Flowise prediction endpoint directly
+        // OSS: call Loomflow prediction endpoint directly
         await fetch(`/api/v1/prediction/${agentflowId}`, {
             method: 'POST',
             headers: { Authorization: `Bearer ${token}` },
@@ -121,7 +121,7 @@ When `onHumanInput` is not provided, Approve/Reject buttons are not rendered. No
 </ObserveProvider>
 ```
 
-**OSS session auth** — embedding inside the Flowise UI where a session cookie already exists:
+**OSS session auth** — embedding inside the Loomflow UI where a session cookie already exists:
 
 ```tsx
 <ObserveProvider
@@ -161,7 +161,7 @@ Root provider. Wraps `ExecutionsViewer` or `ExecutionDetail`. Injects the MUI th
 <!-- prettier-ignore -->
 | Prop                  | Type                                                                      | Default        | Description                                                                                   |
 | --------------------- | ------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------------------------------------- |
-| `apiBaseUrl`          | `string`                                                                  | **(required)** | Flowise API server base URL                                                                   |
+| `apiBaseUrl`          | `string`                                                                  | **(required)** | Loomflow API server base URL                                                                   |
 | `token`               | `string`                                                                  | —              | API key — sets `Authorization: Bearer <token>`. Optional when using `requestInterceptor`. |
 | `requestInterceptor`  | `(config: InternalAxiosRequestConfig) => InternalAxiosRequestConfig`     | —              | Customize outgoing requests. Runs after Bearer header is set — can extend or override it. See [Request Interceptor](#with-request-interceptor) below. |
 | `isDarkMode`          | `boolean`                                                                 | `false`        | Use dark mode theme                                                                           |

@@ -1,6 +1,6 @@
 # @flowiseai/observe — Examples
 
-A Vite + React dev app for exploring and testing `@flowiseai/observe` components against a live Flowise instance.
+A Vite + React dev app for exploring and testing `@flowiseai/observe` components against a live Loomflow instance.
 
 ## Setup
 
@@ -13,9 +13,9 @@ cp .env.example .env
 <!-- prettier-ignore -->
 | Variable | Description |
 | --- | --- |
-| `VITE_API_BASE_URL` | Base URL of your Flowise instance (default: `http://localhost:3000`) |
-| `VITE_API_TOKEN` | API key for authentication — get this from **Flowise UI → Settings → API Keys → Create New Key**. This is an API key, not a user session token. Ensure the key has the necessary permissions for any features you want to exercise (e.g. deleting executions). |
-| `VITE_FLOW_ID` | _(optional)_ UUID of an agentflow — scopes the Executions Viewer to that flow only. When unset, all executions across every agentflow are shown. Get it from the URL or settings of your agentflow in Flowise UI. |
+| `VITE_API_BASE_URL` | Base URL of your Loomflow instance (default: `http://localhost:3000`) |
+| `VITE_API_TOKEN` | API key for authentication — get this from **Loomflow UI → Settings → API Keys → Create New Key**. This is an API key, not a user session token. Ensure the key has the necessary permissions for any features you want to exercise (e.g. deleting executions). |
+| `VITE_FLOW_ID` | _(optional)_ UUID of an agentflow — scopes the Executions Viewer to that flow only. When unset, all executions across every agentflow are shown. Get it from the URL or settings of your agentflow in Loomflow UI. |
 | `VITE_EXECUTION_ID` | UUID of a specific execution — used by the Standalone Detail demo. Get it from any execution row in the executions view. |
 | `VITE_AGENTFLOW_CANVAS_URL` | _(optional)_ Base URL of the agentflow canvas — when set, the demos wire `onAgentflowClick` to open `${VITE_AGENTFLOW_CANVAS_URL}/<agentflowId>` in a new tab. When unset, the agentflow chip in the SDK header renders non-clickable. Example: `http://localhost:3000/v2/agentcanvas`. |
 
@@ -75,4 +75,4 @@ Features exercised:
 ## Notes
 
 -   The examples import `@flowiseai/observe` directly from `packages/observe/src/` via Vite path aliases — no build step required. Source changes are reflected immediately via HMR.
--   HITL callbacks in these demos log to the browser console instead of making real prediction calls. To test end-to-end HITL, replace the `onHumanInput` handler with a real fetch to your Flowise prediction endpoint.
+-   HITL callbacks in these demos log to the browser console instead of making real prediction calls. To test end-to-end HITL, replace the `onHumanInput` handler with a real fetch to your Loomflow prediction endpoint.

@@ -234,8 +234,8 @@ The SDK sends `Authorization: Bearer <token>` by default. Different consumers au
 | Consumer                     | Auth mechanism                              | How to configure                                       |
 | ---------------------------- | ------------------------------------------- | ------------------------------------------------------ |
 | DevSite                      | AgentForge proxy headers                    | `requestInterceptor` to inject proxy token             |
-| OSS (embedded in Flowise UI) | Session cookie + `x-request-from: internal` | `requestInterceptor` to set `withCredentials` + header |
-| OSS (standalone / external)  | Flowise API key                             | `token` prop (default)                                 |
+| OSS (embedded in Loomflow UI) | Session cookie + `x-request-from: internal` | `requestInterceptor` to set `withCredentials` + header |
+| OSS (standalone / external)  | Loomflow API key                             | `token` prop (default)                                 |
 
 `requestInterceptor` is a callback on the Axios request config, identical in shape to the one in `@flowiseai/agentflow`:
 
@@ -296,14 +296,14 @@ interface ExecutionsViewerProps {
 }
 ```
 
--   In OSS: consumer calls the Flowise prediction endpoint directly
+-   In OSS: consumer calls the Loomflow prediction endpoint directly
 -   In DevSite: consumer routes through the AgentForge proxy
 
 The SDK never calls the prediction API itself. Approve/Reject buttons are only rendered when `onHumanInput` is provided AND the node is a human input node in INPROGRESS state. This keeps auth and routing logic entirely out of the SDK.
 
 ### Tenant Isolation
 
-Tenant isolation is handled server-side by Flowise's `ExtendRequestContextMiddleware` via request headers. The SDK does not accept or pass a `tenantId` prop — the API returns only what the authenticated token is permitted to see.
+Tenant isolation is handled server-side by Loomflow's `ExtendRequestContextMiddleware` via request headers. The SDK does not accept or pass a `tenantId` prop — the API returns only what the authenticated token is permitted to see.
 
 ---
 

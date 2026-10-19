@@ -686,7 +686,7 @@ export class FireCrawlLoader extends BaseDocumentLoader {
     }
 }
 
-// Flowise Node Class
+// Loomflow Node Class
 class FireCrawl_DocumentLoaders implements INode {
     label: string
     name: string

@@ -1,6 +1,6 @@
 # Azure OpenAI Chat Model
 
-Azure OpenAI Chat Model integration for Flowise
+Azure OpenAI Chat Model integration for Loomflow
 
 ## 🌱 Env Variables
 

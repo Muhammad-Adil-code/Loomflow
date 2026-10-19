@@ -1,6 +1,6 @@
 # Azure OpenAI Embedding Model
 
-Azure OpenAI Embedding Model integration for Flowise
+Azure OpenAI Embedding Model integration for Loomflow
 
 ## 🌱 Env Variables
 

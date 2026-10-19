@@ -1,6 +1,6 @@
 # Unstructured File/Floder Loader
 
-Unstructured File Loader integration for Flowise
+Unstructured File Loader integration for Loomflow
 
 ## 🌱 Env Variables
 

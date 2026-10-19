@@ -1,6 +1,6 @@
 # Postgres Vector Store
 
-Postgres Vector Store integration for Flowise
+Postgres Vector Store integration for Loomflow
 
 ## 🌱 Env Variables
 

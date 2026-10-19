@@ -1,6 +1,6 @@
 # Azure OpenAI LLM
 
-Azure OpenAI LLM integration for Flowise
+Azure OpenAI LLM integration for Loomflow
 
 ## 🌱 Env Variables
 

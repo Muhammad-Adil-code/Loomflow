@@ -1,6 +1,6 @@
 # Postgres Record Manager
 
-Postgres Record Manager integration for Flowise
+Postgres Record Manager integration for Loomflow
 
 ## 🌱 Env Variables
 

@@ -12,7 +12,7 @@ RUN apk add --no-cache git python3 py3-pip make g++ build-base cairo-dev pango-d
 # Skip downloading Chrome for Puppeteer (saves build time)
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 
-# Install latest Flowise (upstream package, which Loomflow is forked from) globally (specific version can be set: flowise@1.0.0)
+# Install the Loomflow server package globally (specific version can be set: flowise@1.0.0)
 # npm dedupe is required after install: npm's overrides resolver does not
 # consistently collapse every duplicate of an overridden package in one pass
 # on a tree this size/complexity
@@ -23,8 +23,7 @@ FROM node:${NODE_VERSION}-alpine
 
 LABEL org.opencontainers.image.title="Loomflow" \
       org.opencontainers.image.description="Visual builder for AI agents and workflows" \
-      org.opencontainers.image.licenses="Apache-2.0" \
-      org.opencontainers.image.base.name="Modified fork of Flowise (Apache-2.0)"
+      org.opencontainers.image.licenses="Apache-2.0"
 
 # Install runtime dependencies
 RUN apk add --no-cache chromium git python3 py3-pip make g++ build-base cairo-dev pango-dev curl

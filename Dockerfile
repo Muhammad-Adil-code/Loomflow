@@ -8,8 +8,7 @@ FROM node:24-alpine
 
 LABEL org.opencontainers.image.title="Loomflow" \
       org.opencontainers.image.description="Visual builder for AI agents and workflows" \
-      org.opencontainers.image.licenses="Apache-2.0" \
-      org.opencontainers.image.base.name="Modified fork of Flowise (Apache-2.0)"
+      org.opencontainers.image.licenses="Apache-2.0"
 
 # Install system dependencies and build tools
 RUN apk update && \

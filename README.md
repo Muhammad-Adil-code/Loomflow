@@ -13,6 +13,12 @@ English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.
 
 # Loomflow
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Loomflow demo" width="860">
+</p>
+
+<p align="center"><a href="docs/demo.mp4">Watch the full demo video (2 minutes)</a></p>
+
 **A visual builder for AI agents and workflows.** Drag nodes onto a canvas, thread them together, and ship agents, chat flows and automations without wiring everything by hand.
 
 Loomflow is a modified fork of [Flowise](https://github.com/FlowiseAI/Flowise) (Apache License 2.0). See [Origin and licence](#origin-and-licence).
@@ -27,6 +33,24 @@ Loomflow is a modified fork of [Flowise](https://github.com/FlowiseAI/Flowise) (
 -   **Runs**: inspect executions, evaluate results and browse templates.
 -   **Fresh canvas**: category-colored node headers, rounded cards, smooth coral edges and a dotted grid, in light and dark themes.
 -   **Embed and API**: expose any flow through an API or an embeddable chat widget.
+
+## Screenshots
+
+| Agents | Studio |
+| --- | --- |
+| ![Agents](docs/screenshots/agents.png) | ![Studio](docs/screenshots/studio.png) |
+
+| Multi-agent supervisor canvas | Agentic RAG canvas |
+| --- | --- |
+| ![Supervisor canvas](docs/screenshots/agent-canvas-supervisor.png) | ![Agentic RAG canvas](docs/screenshots/agent-canvas-rag.png) |
+
+| Studio chat flow | Templates |
+| --- | --- |
+| ![Studio canvas](docs/screenshots/studio-canvas.png) | ![Templates](docs/screenshots/templates.png) |
+
+| Tools | Knowledge |
+| --- | --- |
+| ![Tools](docs/screenshots/tools.png) | ![Knowledge](docs/screenshots/knowledge.png) |
 
 ## Table of Contents
 
